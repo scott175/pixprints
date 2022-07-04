@@ -34,7 +34,9 @@
  
    </nav>
  
-
+   <hero>
+       <img src="img/Screen Shot 2022-06-08 at 11.45.45 AM_auto_x2.jpg" alt="hero" class="responsive">
+   </hero>
  
 
 
