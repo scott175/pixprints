@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*Navigation bar start*/
 nav {
   display: flex;
   justify-content: space-around;
@@ -120,11 +121,16 @@ nav {
   color: white;
 }
 
+/*Navigation bar end*/
+
+/*Hero image start*/
+
 .responsive {
   width: 100%;
   height: auto;
  }
- 
+
+/*Hero image end*/ 
 
 
 
@@ -290,4 +296,320 @@ nav {
   text-decoration: none;
   color: white;
 }
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: black;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0 3rem 0;
+    color: grey;
+}
+.socials li{
+    margin: 0 30px;
+    color: grey;
+
+}
+.socials a{
+    text-decoration: none;
+    color: grey;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 0%;
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 40px;
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: white;
+}
+
+.footer-bottom{
+    background: #050202;
+    width: 100vw;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: grey;
+}
+.footer-bottom p a{
+  color: grey;
+  font-size: 14px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: grey;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: white;
+}
+      
+@media (max-width:500px) {
+.footer-menu ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+}
+
+.about-us-p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 100px
+    
+}
+
+.container1:hover .box {
+  opacity: 0.3;
+}
+
+.container2:hover .box1 {
+  opacity: 0.3;
+}
+
+.container3:hover .box2 {
+  opacity: 0.3;
+}
+
+.container4:hover .box3 {
+  opacity: 0.3;
+}
+
+.container5:hover .box4 {
+  opacity: 0.3;
+}
+
+.container6:hover .box5 {
+  opacity: 0.3;
+}
+
+.container7:hover .box6 {
+  opacity: 0.3;
+}
+
+.container8:hover .box7 {
+  opacity: 0.3;
+}
+
+.container9:hover .box8 {
+  opacity: 0.3;
+}
+
+.container10:hover .box9 {
+  opacity: 0.3;
+}
+
+.container11:hover .box10 {
+  opacity: 0.3;
+}
+
+.container12:hover .box11 {
+  opacity: 0.3;
+}
+
+.box {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box3 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box4 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box5 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box6 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box7 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box8 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box9 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box10 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box11 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 0px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container-contact {
+  border-radius: 0px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
 
