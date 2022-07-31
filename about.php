@@ -36,6 +36,78 @@
     
 
     <body bgcolor="020017">
+        
+        <style>
+                
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    </style>
+        
+            <div class="gallery-header">
+    <a style="color: white; margin: 435px; font-size: 100px; font-family: 'Montserrat', sans-serif;"> Our People</a>
+    </div>
+    
+        
+        
+  <div class="row"> 
+  			<div class="column">
+    				<img src="img/Screen%20Shot%202022-07-07%20at%2010.11.15%20PM.png">
+                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.38.30%20PM.png">
+               
+  			</div>
+  			<div class="column">
+       				 <img src="img/Screen%20Shot%202022-07-07%20at%2010.11.50%20PM.png">
+                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.41.33%20PM.png">
+
+    			</div> 
+     			 <div class="column">
+        			<img src="img/Screen%20Shot%202022-07-07%20at%2010.11.30%20PM.png">
+                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.44.31%20PM.png">
+
+    			</div>  
+      			<div class="column">
+       				 <img src="img/Screen%20Shot%202022-07-07%20at%2010.11.58%20PM.jpg">
+                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.45.56%20PM.png">
+
+    			</div>  
+		</div>  
 
     
 
