@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,11 +37,14 @@
     
 </head>
     
-     <?php include"setup.php";
+    <body bgcolor="white">
+
+    
+     <?php include "setup.php";
         
     $sql = "SELECT * FROM pages ";
     $result = $conn->query($sql);
-
+   # print $sql;
     if ($result->num_rows > 0) {
         // output data of each row
         $row = $result->fetch_assoc();
@@ -51,7 +54,7 @@
         $image1=$row["image1"];
     ?>
     
-    <?php>
+    <?php
         
     } else {
         echo "0 results";
@@ -60,66 +63,24 @@ $conn->close();
       
     ?>
     
-<body bgcolor="white">
 
 <?php include("nav-bar.php"); ?>
     
    <table id="customers">
+       
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th><?php print $title1; ?>
+      <a href='edit_page.php?id=<?php print $pageID; ?>'>Edit</a></th>
+    <th><?php print $para1; ?></th>
+    <th><?php print $page1; ?></th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td><?php print $title1; ?></td>
+    <td><?php print $para1; ?></td>
+    <td><?php print $page1; ?></td>
   </tr>
-  <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
-  </tr>
-  <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Königlich Essen</td>
-    <td>Philip Cramer</td>
-    <td>Germany</td>
-  </tr>
-  <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
-  </tr>
-  <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
-  </tr>
-  <tr>
-    <td>North/South</td>
-    <td>Simon Crowther</td>
-    <td>UK</td>
-  </tr>
-  <tr>
-    <td>Paris spécialités</td>
-    <td>Marie Bertrand</td>
-    <td>France</td>
-  </tr>
+
+
 </table>
 
 
