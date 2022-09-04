@@ -14,8 +14,33 @@
 
 <?php include("nav-bar.php"); ?>
     
+<?php include "setup.php";
+        
+    $sql = "SELECT * FROM pages ";
+    $result = $conn->query($sql);
+   # print $sql;
+    if ($result->num_rows > 0) {
+        // output data of each row
+        $row = $result->fetch_assoc();
+        #debugging print_r($row);
+        $image20=$row["image20"];
+        $image21=$row["image21"];
+        $title4=$row["title4"];
+
+
+    ?>
+    
+    <?php
+        
+    } else {
+        echo "0 results";
+    }
+$conn->close();
+      
+    ?>   
+    
    <hero>
-       <img src="img/hero-img.jpg" alt="hero" class="responsive">
+        <?php echo "<a>$image20</a>"; ?>
    </hero>
 
 
@@ -24,11 +49,14 @@
 
     <div class="container0">
       <div class="image-course">
-        <img class="course" src="img/Screen%20Shot%202022-06-09%20at%209.21.22%20AM.jpg">
+        <?php echo "<a>$image21</a>"; ?>
+
       </div>
+        
       <div class="header">
-      <a class="Our-work" href='gallery.php'>Our work</a>
+        <?php echo "<a>$title4</a>"; ?>
       </div>
+        
     </div>
 
 

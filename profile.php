@@ -52,15 +52,36 @@ if (!isset($_SESSION['loggedin'])) {
 		<title>Profile Page</title>
 		<link href="home.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="main.css" rel="stylesheet" type="text/css">
+
 	</head>
 	<body class="loggedin">
-		<nav class="navtop">
-			<div>
-				<h1>Website Title</h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
-				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
-			</div>
-		</nav>
+            
+        <nav>
+        <img class="logo" src="img/Pix-Prints-Logo.webp" alt="logo">
+
+        <ul class="nav-links">
+            <li>
+                <a href="home.php">HOME</a>
+            </li>
+            
+            <li>
+                <a href="profile.php">PROFILE</a>
+            </li> 
+            
+             <li>
+                <a href="logout.php">LOGOUT</a>
+            </li> 
+            
+        </ul>
+
+        <div class="burger">
+           <div class="line1"></div>
+           <div class="line2"></div>
+           <div class="line3"></div>
+       </div>
+ 
+   </nav>
 		<div class="content">
 			<h2>Profile Page</h2>
 			<div>

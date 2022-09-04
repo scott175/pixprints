@@ -11,6 +11,9 @@
             <li>
                 <a href="about.php">ABOUT</a>
             </li>  
+            <li>
+                <a href="login.php">LOGIN</a>
+            </li> 
         </ul>
 
         <div class="burger">

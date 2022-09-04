@@ -12,25 +12,52 @@
     
 </head>
     
-    
-    
 <body bgcolor="020017">
+    
+    <?php include("setup.php"); ?>
 
     <?php include("nav-bar.php"); ?>
     
+    
+    <?php
+        $sql = "SELECT * FROM pages where id=1";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            // output data of each row
+            $row = $result->fetch_assoc();
+            #deugging print_r($row);
+            $title1=$row["title1"];
+            $title2=$row["title2"];
+            $para1=$row["para1"];
+            $image1=$row["image1"];
+            $image2=$row["image2"];
+            $image3=$row["image3"];
+            $image4=$row["image4"];
+            $image5=$row["image5"];
+            $image6=$row["image6"];
+            $image7=$row["image7"];
+            $image8=$row["image8"];
+
+
+
+        
+        } else {
+            echo "0 results";
+        }
+    $conn->close(); 
+    ?>
+        
+    
+    
     <div class="gallery-header">
         
-        <?php echo "<a>$title1</a>";
-        ?>
+        <?php echo "<a>$title1</a>"; ?>
              
-    <a style="color: white; margin: 450px; font-size: 100px; font-family: 'Montserrat', sans-serif;"> ABOUT US</a>
     </div>
 
     <div class="about-us-p">
         
-        
-        <p>We are a year 13 business start up from Mahurangi College, our goal is to provide beautiful prints of our local environment to help encourage preservation of the enviroment. We take photos and print them our selves mostly of the Rodney area in places such as Omaha, Point wells, Matakana, Warkworth and others. If you are interested in one of our high quality prints please check out our gallery of photos and to see more of what we do.
-        </p>
+        <?php echo "<a>$para1</a>"; ?>
         
     </div>
     
@@ -80,31 +107,41 @@
 }
     </style>
         
-            <div class="gallery-header">
-    <a style="color: white; margin: 435px; font-size: 100px; font-family: 'Montserrat', sans-serif;"> Our People</a>
+    <div class="gallery-header">
+        
+        <?php echo "<a>$title2</a>"; ?>
+        
     </div>
     
         
         
   <div class="row"> 
   			<div class="column">
-    				<img src="img/Screen%20Shot%202022-07-07%20at%2010.11.15%20PM.png">
-                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.38.30%20PM.png">
+                
+                    <?php echo "<a>$image1</a>"; ?>
+                    <?php echo "<a>$image2</a>"; ?>
                
   			</div>
   			<div class="column">
-       				 <img src="img/Screen%20Shot%202022-07-07%20at%2010.11.50%20PM.png">
-                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.41.33%20PM.png">
+                
+                    <?php echo "<a>$image3</a>"; ?>
+                    <?php echo "<a>$image4</a>"; ?>
+
+
 
     			</div> 
      			 <div class="column">
-        			<img src="img/Screen%20Shot%202022-07-07%20at%2010.11.30%20PM.png">
-                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.44.31%20PM.png">
+                     
+                    <?php echo "<a>$image5</a>"; ?>
+                    <?php echo "<a>$image6</a>"; ?>
+
+
 
     			</div>  
       			<div class="column">
-       				 <img src="img/Screen%20Shot%202022-07-07%20at%2010.11.58%20PM.jpg">
-                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.45.56%20PM.png">
+                    
+                    <?php echo "<a>$image7</a>"; ?>
+                    <?php echo "<a>$image8</a>"; ?>
 
     			</div>  
 		</div>  

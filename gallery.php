@@ -51,12 +51,48 @@
 }
     </style>
 </head>
+    
 <body bgcolor="020017">
+    
+         <?php include "setup.php";
+        
+    $sql = "SELECT * FROM pages ";
+    $result = $conn->query($sql);
+   # print $sql;
+    if ($result->num_rows > 0) {
+        // output data of each row
+        $row = $result->fetch_assoc();
+        #debugging print_r($row);
+        $title3=$row["title3"];
+        $image9=$row["image9"];
+        $image10=$row["image10"];
+        $image11=$row["image11"];
+        $image12=$row["image12"];
+        $image13=$row["image13"];
+        $image14=$row["image14"];
+        $image15=$row["image15"];
+        $image16=$row["image16"];
+        $image17=$row["image17"];
+        $image18=$row["image18"];
+        $image19=$row["image19"];
+
+    ?>
+    
+    <?php
+        
+    } else {
+        echo "0 results";
+    }
+$conn->close();
+      
+    ?>
 
     <?php include("nav-bar.php"); ?>
     
     <div class="gallery-header">
-    <a style="color: white; margin: 570px; font-size: 100px; font-family: 'Montserrat', sans-serif;"> Gallery</a>
+        
+        <?php echo "<a>$title3</a>"; ?>
+    
     </div>
     
     <a href="shop-page.php">
@@ -64,32 +100,30 @@
   <div class="row"> 
   			<div class="column">
                 <div class="container1">
-    				<img class="box" src="img/PIX_9965-Edit-2.jpg">  
+                    <?php echo "<a>$image9</a>"; ?>
                 </div>
                 <div class="container2">
-    				<img class="box1" src="img/DSC_5611.jpg">
+                    <?php echo "<a>$image10</a>"; ?>
                 </div>    
                 <div class="container3">
-                    <img class="box2" src="img/P1030285.jpg">
+                    <?php echo "<a>$image11</a>"; ?>
                 </div>
                 <div class="container4">
-                    <img class="box3" src="img/DJI_0484.jpg">
+                    <?php echo "<a>$image12</a>"; ?>
                 </div>
       
                 
   			</div>
   			<div class="column">
                  <div class="container5">
-       				 <img class="box4" src="img/PIX_6584.jpg">
+                    <?php echo "<a>$image13</a>"; ?>
                 </div>
                 
                 <div class="container6">
-                    <img class="box5" src="img/DSC_5707.jpg">
-                </div>
+                    <?php echo "<a>$image14</a>"; ?>
+]                </div>
     
-                <div class="container7">
-                    <img class="box6" src="img/DSC_5707.jpg">
-                </div>    
+    
 
     			</div> 
       
@@ -97,26 +131,27 @@
             <div class="column">
                      
                 <div class="container8">
-        			<img class="box7" src="img/DSC_5658.jpg">
+                    <?php echo "<a>$image15</a>"; ?>
                 </div>    
                      
                 <div class="container9">
-                    <img class="box8" src="img/DJI_0566.jpg">
+                    <?php echo "<a>$image16</a>"; ?>
                 </div>    
                 
                 <div class="container10">   
-                    <img class="box9" src="img/DSC_5655.jpg">    
+                    <?php echo "<a>$image17</a>"; ?>
+
     			</div>  
                 
             </div>    
       
       		<div class="column">
                 <div class="container11">   
-       				 <img class="box10" src="img/DJI_0412.jpg">
+                    <?php echo "<a>$image18</a>"; ?>
                 </div>    
                 
                 <div class="container12">   
-                    <img class="box11" src="img/IMG_6561.jpg">
+                    <?php echo "<a>$image19</a>"; ?>
                 </div>    
     			 
                 </div>  

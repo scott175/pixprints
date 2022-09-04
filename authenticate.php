@@ -1,15 +1,3 @@
-  <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Login</title>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-        <link href="login.css" rel="stylesheet" type="text/css">
-
-	</head>
-	<body>
-
-
         
 <?php
 session_start();
@@ -43,7 +31,9 @@ if ($stmt->num_rows > 0) {
 		$_SESSION['loggedin'] = TRUE;
 		$_SESSION['name'] = $_POST['username'];
 		$_SESSION['id'] = $id;
-		echo 'Welcome ' . $_SESSION['name'] . '!';
+		$_SESSION['message']= 'Welcome ' . $_SESSION['name'] . '!';
+        header('Location: home.php');
+
 	} else {
 		// Incorrect password
 		echo 'Incorrect username and/or password!';
@@ -58,8 +48,5 @@ if ($stmt->num_rows > 0) {
    
         
 ?>
-        
-	</body>
-</html>
 
 
