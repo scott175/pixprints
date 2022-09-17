@@ -49,7 +49,12 @@
         // output data of each row
         $row = $result->fetch_assoc();
         #debugging print_r($row);
+        $page1=$row["page1"];
+        $page2=$row["page2"];
+        $page3=$row["page3"];
         $title1=$row["title1"];
+        $title2=$row["title2"];
+        $title=$row["title3"];
         $para1=$row["para1"];
         $image1=$row["image1"];
     ?>
@@ -66,18 +71,23 @@ $conn->close();
 
 <?php include("nav-bar.php"); ?>
     
-   <table id="customers">
+<table id="customers">
        
   <tr>
-    <th><?php print $title1; ?>
-      <a href='edit_page.php?id=<?php print $pageID; ?>'>Edit</a></th>
-    <th><?php print $para1; ?></th>
     <th><?php print $page1; ?></th>
+    <th><?php print $title1; ?></th>
+    <th><?php print $para1; ?></th>
+    <th><?php print $image1; ?></th>
   </tr>
   <tr>
-    <td><?php print $title1; ?></td>
-    <td><?php print $para1; ?></td>
-    <td><?php print $page1; ?></td>
+    <th><?php print $page2; ?></th>
+    <td><?php print $title2; ?></td>
+    <td><?php print $para2; ?></td>
+    <td><?php print $image2; ?></td>
+  </tr>
+<tr>
+    <th><?php print $page3; ?></th>
+
   </tr>
 
 

@@ -36,7 +36,7 @@
             $image5=$row["image5"];
             $image6=$row["image6"];
             $image7=$row["image7"];
-            $image8=$row["image8"];
+            $image8=$row["image"];
 
 
 
@@ -51,7 +51,8 @@
     
     <div class="gallery-header">
         
-        <?php echo "<a>$title1</a>"; ?>
+        
+    <a style="color: white; margin: 450px; font-size: 100px; font-family: 'Montserrat', sans-serif;"> <?php echo "  $title1"; ?> </a>
              
     </div>
 
@@ -109,7 +110,7 @@
         
     <div class="gallery-header">
         
-        <?php echo "<a>$title2</a>"; ?>
+    <a style="color: white; margin: 435px; font-size: 100px; font-family: 'Montserrat', sans-serif;"><?php echo "$title2"; ?></a>
         
     </div>
     
@@ -118,7 +119,8 @@
   <div class="row"> 
   			<div class="column">
                 
-                    <?php echo "<a>$image1</a>"; ?>
+                    <img src="<?php echo "$image1"; ?>">
+
                     <?php echo "<a>$image2</a>"; ?>
                
   			</div>
@@ -142,6 +144,9 @@
                     
                     <?php echo "<a>$image7</a>"; ?>
                     <?php echo "<a>$image8</a>"; ?>
+
+
+                    <img src="img/Screen%20Shot%202022-07-07%20at%2010.45.56%20PM.png">
 
     			</div>  
 		</div>  
